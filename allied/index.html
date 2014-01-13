@@ -1,1 +1,53 @@
-Hello Allied
+Hello Allied<html>
+  <head>
+    <title>AI Mobile Account Registration Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="src/includes/css/bootstrap.css" rel="stylesheet">
+    <link href="src/includes/css/aimobile.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mainrow">
+        <h4>To register for a new account, enter your account number below.</h4>
+       
+        <hr />
+        <cfoutput>
+        <form name="formEnterAccountNumber" action="#" method="post" role="form">
+        <div class="divEnterAccountNumberRegister form-group" id="enterAccountNumberField">
+          <fieldset class="registration">
+            <div id="billingAccountNumberInput">
+              
+                <label for="billingAccountNumberTextField">Account Number: </label>
+                <input id="billingAccountNumberTextField" name="billingAccountNumber" class="firstInput form-control" value="#localBillingAccountNumber#" maxLength="9" autocomplete="off" placeholder="Your Billing Account Number" />
+              
+              
+          </fieldset>
+        </div>
+
+        <hr />
+        
+        <div>
+          <p class="inputButtons">
+            <input type="submit" name="nextButton" id="nextButton" class="btn btn-primary btn-lg" role="button" value="Next »" />
+            &nbsp;&nbsp; <a class="btn btn-default btn-lg" role="button">Cancel</a>
+          </p>
+        </div>
+      </form>
+    </cfoutput>
+      </div>
+      
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
